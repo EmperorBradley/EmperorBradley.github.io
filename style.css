@@ -1,3 +1,73 @@
-h1{
-    color: darkorange;
+/*vvvvvvvvvvvvvvvvvvvCOREvvvvvvvvvvvvvvvvvvv*/
+html{
+    
+}
+root:{
+    
+}
+/*^^^^^^^^^^^^^^^^^^^CORE^^^^^^^^^^^^^^^^^^^*/
+#main-menu{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    color: snow;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    transition: opacity 400ms ease;
+}
+#main-menu-items{
+    margin-left: clamp(4rem, 20vw, 48rem);
+    position: relative;
+    z-index: 2;
+}
+#main-menu-items:hover > .menu-item {
+    opacity: 0.3;
+}
+#main-menu-items:hover > .menu-item:hover {
+    opacity: 1;
+    color: white;
+}
+@keyframes test{
+    from {
+        background-position: 0%;
+    }
+    to{
+        background-position: 200%;
+    }
+}
+#background{
+    background: linear-gradient(
+        to right,
+        rgb(41, 0, 97),
+        rgb(0, 0, 0),
+        rgb(41, 0, 97)
+    );
+    background-size: 200%;
+    animation: test 10s linear infinite;
+}
+
+
+/*background*/
+#main-background{
+    height: 100%;
+    width: 100%;
+
+    background-image: radial-gradient(
+        rgba(2255, 255, 255, 0.1) 9%,
+        transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    transition: ease 100ms;
 }
